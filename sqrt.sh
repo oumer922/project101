@@ -1,7 +1,13 @@
-#!/data/data/com.termux/files/usr/bin/bash
+#!/bin/bash
 
 echo "enter a number"
 read num
-echo "square root of $a is.."
-echo $((a))
-a=$(bc <<< "scale=0; sqrt(($num))")
+
+result=0
+i=0
+while ((i * i <= num));
+do
+result=$i
+((i++))
+done
+echo "square root of $num is $result"
