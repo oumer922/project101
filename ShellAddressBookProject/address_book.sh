@@ -15,6 +15,7 @@ display_menu() {
   echo "6. Exit"
 }
 
+
 # Function to add a new contact
 add_contact() {
   read -p "Enter name: " name
